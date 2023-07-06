@@ -1,0 +1,22 @@
+let fullWordList = ['1', '2', '3', '4', '5'];
+let wordsToRemove = ['1', '2', '3'];
+
+let duplicates = [];
+let sameValues = [];
+
+// Finding duplicates
+for (let i = 0; i < fullWordList.length; i++) {
+  if (wordsToRemove.includes(fullWordList[i])) {
+    duplicates.push(fullWordList[i]);
+  }
+}
+
+// Finding same values
+for (let i = 0; i < wordsToRemove.length; i++) {
+  if (fullWordList.includes(wordsToRemove[i])) {
+    sameValues.push(wordsToRemove[i]);
+  }
+}
+
+console.log("Duplicates: ", duplicates);
+console.log("Same values: ", sameValues);

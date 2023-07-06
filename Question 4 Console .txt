@@ -1,0 +1,7 @@
+console.log("7" > 7)
+console.log("2">"21")
+console.log("KL">"S")
+
+Output Will Be:-1 = false
+		2 = false
+		3 = false
